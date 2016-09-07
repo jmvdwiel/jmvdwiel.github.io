@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/png" href="images/jw-fat-black.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<title>Jeroen van der Wiel</title>
+</head>
+<body>
+	<aside id="about">
+		<script>
+				$( "#about" ).click(function() {  $( "#info" ).toggleClass( "show" ); $( "#about-btn" ).toggleClass( "active" );});
+		</script>
+		<div id="about-btn"></div>
+	</aside>
+ 	<section id="info">
+ 			<article>
+ 				<h2>about me</h2>
+ 				<br><br>
+ 				<h3>JEROEN VAN DER WIEL</h3>
+ 				Hi! I'm Jeroen van der Wiel, a <span>26 year old</span> application development student and graduated <span>Desktop Publisher</span>.
+ 				<br>
+ 				I studied desktop pusblishing at the <span>Da Vinci College</span> in Dordrecht, the Netherlands. After
+ 				When not programmig or designing I spend my hours reading up on interesting subjects like <span>neutrinos</span> and cuddling with my beautiful daughter <span>Ava</span>.
+ 				<br>
+ 				Mail me at <span><a href="mailto:hello@jeroenvanderwiel.com">hello@jeroenvanderwiel.com</a></span>
+ 				<br><br>
+ 				<table>
+  					<tr><td class="table-left">2006-2006</td><td>GRAPHIC DESIGN</td></tr>
+ 					<tr><td class="table-left">2007-2007</td><td>GAME DESIGN</td></tr>
+ 					<tr><td class="table-left">2007-2008</td><td>IT MANAGEMENT</td></tr>
+ 					<tr><td class="table-left">2012-2016</td><td>DESKTOP PUBLISHING</td></tr>
+ 				</table>
+ 			</article>
+ 	</section>
+	<main>
+ 		<section id="landing">
+ 			<article>
+ 				<h2>welcome</h2>
+ 			</article>
+ 			<div id="landing-img">
+ 			</div>
+ 			<div id="landing-btn">
+ 				<script>
+ 					$( "#landing-btn" ).click(function() {  $('html,body').animate({  scrollTop: $( "#portfolio" ).offset().top},  'slow');});
+ 				</script>
+ 				&#8595;
+ 			</div>
+ 		</section>
+
+ 		<section id="portfolio">
+ 			<article>
+ 				<h2>my work</h2>
+ 			</article>
+ 		</section>
+	</main>
+</body>
+</html>

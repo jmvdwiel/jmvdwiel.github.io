@@ -1,0 +1,177 @@
+/* ======================
+BASIC STRUCTURE
+====================== */
+body {
+	margin: 0 0 0 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+@font-face {
+	font-family: Prestige;
+	src: url(prestige.otf);
+}
+
+a {
+	text-decoration: none;
+	color: #657d8a;
+}
+
+h2 {
+	color: #657d8a;
+	font-size: 18px;
+	line-height 18px;
+	margin-bottom: 0px;
+}
+/* ======================
+LANDING
+====================== */
+
+#landing {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0px;
+	left: -1920px;
+	z-index: 0;
+	background-image: url(images/landing-background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	animation-name: landing;
+	animation-duration: 0.7s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-delay: 0.3s;
+}
+
+@keyframes landing {
+	0% {left: -1920px);}
+	100% {left: 0px;}
+}
+
+#landing-img {
+	width: 512px;
+	height: 512px;
+	background-image: url(images/jw-landing.png);
+	position: absolute;
+	left: calc(50vw - 256px);
+	top: calc(50vh - 256px);
+}
+
+#landing-btn {
+	position: absolute;
+	top: 89vh;
+	left: 50vw;
+	z-index: 8;
+	font-size: 32px;
+	animation-name: landing-btn;
+	animation-duration: 0.9s;
+	animation-iteration-count: infinite;
+	cursor: pointer;
+}
+
+@keyframes landing-btn {
+	0% {top: 88vh;}
+	50% {top: 89vh;}
+	100% {top: 88vh;}
+}
+
+/* ======================
+ASIDE
+====================== */
+
+aside {
+	width: 48px;
+	height: 100vh;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 9;
+	border-right: 1.5px solid #657d8a;
+	cursor: pointer;
+}
+
+#about-btn {
+	display: block;
+	transform: rotate(-90deg);
+	transform-origin: left;
+	background: url('images/jw-about.png');
+	height: 48px;
+	width: 128px;
+	position: relative;
+	top: 50vh;
+	left: 32px;
+	z-index: 10;
+}
+
+#about-btn.active {
+	background: url('images/jw-about-active.png');
+}
+
+#info {
+	width: 100vw;
+	height: 100vh;
+	background-color: #fff;
+	opacity: 0.1;
+	position: fixed;
+	top: 0px;
+	left: -100vw;
+	z-index: 8;
+	transition: all 0.2s ease-in-out;
+	overflow-y: scroll;
+}
+
+#info.show {
+	left: 0px;
+	opacity: 1.0;
+}
+
+#info article {
+	position: absolute;
+	left: 96px;
+	height: 80vh;
+	width: 60vw;
+}
+
+#info h3 {
+	font-family: Prestige;
+	font-size: 56px;
+	line-height: 56px;
+	font-weight: 800;
+	margin-bottom: 0px;
+}
+
+#info span {
+	font-weight: 600;
+	text-decoration: underline;
+	color: #657d8a;
+}
+
+#info table {
+	color: #657d8a;
+}
+
+.table-left {
+	border: 1px solid #657d8a;
+}
+
+.table-left:hover {
+	background-color: #657d8a;
+	color: #fff;
+	cursor: pointer;
+}
+
+#portfolio {
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	top: 100vh;
+	left: 0px;
+	background-color: #fff;
+}
+
+main h2{
+	padding-left: 64px;
+}
