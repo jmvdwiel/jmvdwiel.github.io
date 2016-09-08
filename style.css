@@ -155,10 +155,18 @@ aside {
 
 #info table {
 	color: #657d8a;
-	display: inline;
 	max-width: 29vw;
 }
 
+#studies{
+	display: inline;
+	float: left;
+}
+
+#work {
+	display: inline;
+	float: right;
+}
 .table-left {
 	border: 1px solid #657d8a;
 }
